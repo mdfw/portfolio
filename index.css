@@ -1,0 +1,71 @@
+body {
+    background: white;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.a11y {
+    border: none;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0
+}
+
+div {
+    /*border: red 1px solid;*/
+}
+
+.maxwidth {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intro {
+    width: 100%;
+    height: 800px;
+    background-image: url("img/blue_tile_background.jpg");
+}
+
+.img-hero {
+    z-index: 0;
+    margin-right: 30px;
+    float: right;
+    margin-top: 40px;
+}
+
+#intro-hi {
+    clear: right;
+    font-size: 3em;
+}
+
+#intro-mark p {
+    font-size: 2em;
+    line-height: 2.1em;
+}
+
+#intro-content {
+    margin-left: 20px;
+    width: 30%;
+    vertical-align: middle;
+    float: left;
+    margin-top: 200px;
+}
+
+.grey-bk-txt {
+    z-index: 2;
+    background-color: #050e51;
+    color: white;
+    padding: 5px;
+}
+
+.nowrapper {
+    white-space: nowrap;
+}
+
+.elevator {
+    margin-left: 10px;
+}
