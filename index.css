@@ -37,6 +37,7 @@ div {
     margin-top: 40px;
 }
 
+
 #intro-hi {
     clear: right;
     font-size: 3em;
@@ -55,11 +56,13 @@ div {
     margin-top: 200px;
 }
 
-.grey-bk-txt {
+.boxed-txt {
     z-index: 2;
     background-color: #050e51;
     color: white;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nowrapper {
@@ -68,4 +71,14 @@ div {
 
 .elevator {
     margin-left: 10px;
+}
+
+.tagline {
+    margin-top: 150px;
+}
+
+@media only screen and (max-device-width: 480px) {
+.img-hero img {
+    width: 40vw;
+ }
 }
