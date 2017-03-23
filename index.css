@@ -89,7 +89,7 @@ div {
 
 .portfolio-desc {
     float: left;
-    width: 390px;
+    width: 380px;
     margin-top: 50px;
     margin-left: 10px;
 }
@@ -110,9 +110,15 @@ div {
 }
 .portfolio-image {
     float: left;
-    width: 500px
+    width: 505px;
 }
+.portfolio-image img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
 
+}
 #contact-area {
     margin-top: 80px;
     margin-bottom: 80px;
