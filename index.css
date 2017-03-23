@@ -1,7 +1,7 @@
 body {
     background: white;
     color: black;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Quattrocento', serif;
     font-weight: normal;
     margin: 0px;
 }
@@ -44,7 +44,7 @@ div {
 }
 
 #intro-mark p {
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 2.1em;
 }
 
@@ -108,17 +108,12 @@ div {
 .portfolio-desc .link {
     font-family: 'Raleway', sans-serif;
 }
+
 .portfolio-image {
     float: left;
-    width: 505px;
+    width: 500px;
 }
-.portfolio-image img {
-    border-width: 1px;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 5px;
 
-}
 #contact-area {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -148,4 +143,56 @@ div {
     background-color: #050e51;
     color: white;
     padding: 20px;
+}
+
+
+.tint {
+    position: relative;
+    float: left;
+    /*margin-right: 20px;*/
+   /* margin-bottom: 20px;*/
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,255,255, 0.5);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.tint:hover:before {
+    background: none;
+}
+
+.t2:before {
+    background: rgba(0,0,255, 0.5);
+}
+
+.t3:before {
+    background: rgba(255,0,0, 0.5);
+}
+
+.t4:before {
+    background: rgba(0,255,0, 0.5);
+}
+
+.t5:before {
+    background: rgba(255,0,240, 0.5);
+}
+
+.t6:before {
+    background: rgba(255,102,0, 0.6);
 }
