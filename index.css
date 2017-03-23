@@ -20,8 +20,10 @@ div {
 }
 
 .maxwidth {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .intro {
@@ -32,11 +34,9 @@ div {
 
 .img-hero {
     z-index: 0;
-    margin-right: 30px;
     float: right;
     margin-top: 40px;
 }
-
 
 #intro-hi {
     clear: right;
@@ -49,7 +49,6 @@ div {
 }
 
 #intro-content {
-    margin-left: 20px;
     width: 30%;
     vertical-align: middle;
     float: left;
@@ -77,8 +76,70 @@ div {
     margin-top: 150px;
 }
 
-@media only screen and (max-device-width: 480px) {
-.img-hero img {
-    width: 40vw;
- }
+.portfolio h1 {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.portfolio-content {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.portfolio-desc {
+    float: left;
+    width: 390px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.portfolio-desc .title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.portfolio-desc .description {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5px;
+    padding-right: 20px;
+}
+
+.portfolio-desc .link {
+    font-family: 'Raleway', sans-serif;
+}
+.portfolio-image {
+    float: left;
+    width: 500px
+}
+
+#contact-area {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#contact-area h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#contact-list {
+    margin-left: 15px;
+}
+.contact {
+    margin-top: 10px;
+}
+
+.contact-type {
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+}
+.contact-data {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 5px;
+}
+
+.page-footer {
+    background-color: #050e51;
+    color: white;
+    padding: 20px;
 }
