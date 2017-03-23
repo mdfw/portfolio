@@ -114,10 +114,21 @@ div {
     width: 500px;
 }
 
+.portfolio-image img {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.portfolio-separator {
+    display: none;
+}
+    
 #contact-area {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
 #contact-area h2 {
     font-weight: bold;
     font-size: 2em;
@@ -126,6 +137,7 @@ div {
 #contact-list {
     margin-left: 15px;
 }
+
 .contact {
     margin-top: 10px;
 }
@@ -145,54 +157,82 @@ div {
     padding: 20px;
 }
 
+@media (max-width: 1000px) {
+    .nowrapper {
+        white-space: inherit;
+    }
+    #intro-content {
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        vertical-align: middle;
+        margin-top: 40px;
+    }
+    #intro-mark p {
+        font-size: 2em;
+        line-height: 2em;
+        margin-right: 10px;
+    }
+    .intro {
+        width: 100%;
+        height: 600px;
+        background-image: url("img/blue_tile_background.jpg");
+    }
 
-.tint {
-    position: relative;
-    float: left;
-    /*margin-right: 20px;*/
-   /* margin-bottom: 20px;*/
-    cursor: pointer;
-    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    .img-hero {
+        display: none;
+    }
+    .tagline {
+        margin-top: 10px;
+    }
+    .portfolio-image {
+        float: left;
+        width: 80%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+    .portfolio-separator {
+        display: inherit;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
 }
 
-.tint:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,255,255, 0.5);
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+
+@media (max-width: 480px) {
+    .nowrapper {
+        white-space: inherit;
+    }
+    #intro-content {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        vertical-align: middle;
+        margin-top: 40px;
+    }
+    #intro-mark p {
+        font-size: 1.6em;
+        line-height: 1.6em;
+        margin-right: 10px;
+    }
+    .img-hero {
+        display: none;
+    }
+    .portfolio-image {
+        float: left;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 15px;
+    }
+    .portfolio-separator {
+        display: inherit;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
 }
 
-.tint:hover:before {
-    background: none;
-}
-
-.t2:before {
-    background: rgba(0,0,255, 0.5);
-}
-
-.t3:before {
-    background: rgba(255,0,0, 0.5);
-}
-
-.t4:before {
-    background: rgba(0,255,0, 0.5);
-}
-
-.t5:before {
-    background: rgba(255,0,240, 0.5);
-}
-
-.t6:before {
-    background: rgba(255,102,0, 0.6);
-}
