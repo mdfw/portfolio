@@ -65,6 +65,10 @@ div {
     border-radius: 30px;
 }
 
+.intro-comma {
+    display: none;
+}
+
 .boxed-txt {
     z-index: 2;
     background-color: black;
@@ -79,9 +83,8 @@ div {
 }
 
 .elevator {
-    margin-left: 10px;
+    margin-left: 20px;
 }
-
 .tagline {
     margin-top: 150px;
 }
@@ -203,16 +206,15 @@ div {
         margin-right: 80px;
     }
     
-    .img-hero {
-        display: none;
-    }
-    
     .elevator {
         margin-left: 0px;
     }
+    
     .tagline {
-        margin-top: 10px;
+        margin-top: 80px;
     }
+    
+    /* Portfolio overrides - specifically adds the separator and some spacing */
     .portfolio-image {
         float: left;
         width: 80%;
@@ -220,6 +222,7 @@ div {
         margin-right: 5px;
         margin-top: 15px;
     }
+    
     .portfolio-separator {
         display: inherit;
         border: 0;

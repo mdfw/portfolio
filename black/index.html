@@ -11,25 +11,21 @@
 	<body class="home" id="mdfw">
 		<div class="page" id="begin">
 			<div class="page-content" id="content">
-				<div class="intro ">
+				<header class="intro "> <!-- width: 100%; height: 800px; background-color: black; -->
     				<div class="maxwidth">
 					    <div id="intro-content">
-                            <h1 class="" id="intro-hi">
-                            <span class="boxed-txt">Hi.</span>
-                        </h1>
-                            <div id="intro-mark">
+                            <h1 id="intro-hi">
+                                <span class="boxed-txt">Hi.</span>
+                            </h1>
+                            <div id="intro-text">
                                 <p>
-                                    <span class="boxed-txt nowrapper">My name is Mark Williams,</span>
-                                    <div class="elevator">
-                                        <p>
-                                            <span class="boxed-txt nowrapper">developer and community manager.</span>
-                                        </p>
-                                    </div>
-                                    <div class="tagline">
-                                        <p>
-                                        <span class="boxed-txt nowrapper">Let's build your next customer success story.</span>
-                                        </p>
-                                    </div>
+                                    <span class="boxed-txt nowrapper">My name is Mark Williams<span class="intro-comma">,</span></span>
+                                </p>
+                                <p class="elevator">
+                                    <span class="boxed-txt nowrapper">developer and community manager.</span>
+                                </p>
+                                <p class="tagline">
+                                    <span class="boxed-txt nowrapper">Let's build your next customer success story.</span>
                                 </p>
                             </div>
                         </div>
@@ -37,7 +33,7 @@
 					        <img alt="Headshot" src="../img/mark_headshot_square.jpg" />
 					    </div>
 				    </div>
-				</div>
+				</header>
 				<div class="portfolio maxwidth">
 					<h1 class="boxed-txt" >
 						<span nowrapper">Portfolio</span>
@@ -45,9 +41,9 @@
 					<!-- Social, not Social -->
 					<div class="portfolio-content">
 					    <div class="portfolio-desc">
-					        <div class="title">
-					            Social, not Social
-					        </div>
+					        <h2 class="title">
+					            <strong>Social, not Social</strong>
+					        </h2>
 					        <div class="description">
 					            Private blogging site where users can post a status message and then send it to Facebook and or to multiple email addresses. React front end, Nodejs backend with PostgreSQL and Redis for storage.
 					        </div>
@@ -67,9 +63,9 @@
 					<!-- Calm comments -->
 					<div class="portfolio-content">
 					    <div class="portfolio-desc">
-					        <div class="title">
+					        <h2 class="title">
 					            Calm comments
-					        </div>
+					        </h2>
 					        <div class="description">
 					            A basic chat system with a twist. All new and updated posts are sequestered for up to 5 minutes. After 5 minutes is up, posts are broadcasted through socket.io to all connected clients. React front end, Nodejs backend with PostgreSQL and Redis for storage.
 					        </div>
@@ -89,9 +85,9 @@
 					<!-- Wikiwalkback -->
 					<div class="portfolio-content">
 					    <div class="portfolio-desc">
-					        <div class="title">
+					        <h2 class="title">
 					            Wiki Walkback
-					        </div>
+					        </h2>
 					        <div class="description">
 					            Wikipedia search using Wikipedia API & React and Redux Framework.
 					        </div>
@@ -111,9 +107,9 @@
 					<!-- Orphic -->
 					<div class="portfolio-content">
 					    <div class="portfolio-desc">
-					        <div class="title">
+					        <h2 class="title">
 					            Orphic Oracle
-					        </div>
+					        </h2>
 					        <div class="description">
 					            Search MusicBrainz and YouTube for information about songs. jQuery, Javascript and CSS.
 					        </div>
@@ -133,9 +129,9 @@
 					<!-- Watchword -->
 					<div class="portfolio-content">
 					    <div class="portfolio-desc">
-					        <div class="title">
+					        <h2 class="title">
 					            Watchword
-					        </div>
+					        </h2>
 					        <div class="description">
 					            Password creation utility for Mac and iOS. Swift and Objective-C. Commercial.
 					        </div>
@@ -151,9 +147,9 @@
 					</div>
 			    </div>
                 <div id="contact-area" class="maxwidth">
-                    <h2 class="boxed-txt">
+                    <h1 class="boxed-txt">
                         Contact
-                    </h2>
+                    </h1>
                     <div id="contact-list" >
                         <div class="contact">
                             <div class="contact-type">
@@ -189,11 +185,6 @@
 					<p>
 						<span class="copyright" id="copyright">
 							Copyright &copy; 2017 Mark D. Freeman Williams
-						</span>
-					</p>
-					<p>
-						<span class="acknowledgement" id="ack">
-							Header image: "blue-pattern-background" by s0405
 						</span>
 					</p>
 					<a class="a11y" href="#begin">
