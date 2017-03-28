@@ -29,7 +29,6 @@ div {
 #intro {
     width: 100%;
     background-color: black;
-    border: lightblue 2px solid;
     height: 800px;
 }
 
@@ -216,7 +215,6 @@ div {
         margin-top: 20px;
     }
     #img-hero {
-        border: 1px red solid;
         position: relative;
     }    
 
