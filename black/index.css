@@ -271,6 +271,13 @@ div {
         border-radius: 0px;
     }
 
+    #intro-hi .boxed-txt {
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 30px;
+    }
+    
     /* portfolio overrides */
     .portfolio-image {
         float: left;
