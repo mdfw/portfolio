@@ -23,19 +23,21 @@ div {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    position: relative;
 }
 
-.intro {
+#intro {
     width: 100%;
-    height: 800px;
     background-color: black;
+    border: lightblue 2px solid;
+    height: 800px;
 }
 
-.img-hero {
-    z-index: 0;
-    float: right;
-    margin-top: 40px;
+#intro-content {
+    vertical-align: middle;
+    margin-top: 150px;
+    z-index: 2;
+    position: absolute;
 }
 
 #intro-hi {
@@ -43,19 +45,12 @@ div {
     font-size: 3em;
 }
 
-#intro-mark p {
+#intro-text p {
     font-size: 2.5em;
     line-height: 2.1em;
 }
 
-#intro-content {
-    width: 30%;
-    vertical-align: middle;
-    float: left;
-    margin-top: 200px;
-}
-
-.intro .boxed-txt {
+#intro .boxed-txt {
     z-index: 2;
     background-color: white;
     color: black;
@@ -67,6 +62,13 @@ div {
 
 .intro-comma {
     display: none;
+}
+
+#img-hero {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
 }
 
 .boxed-txt {
@@ -170,9 +172,15 @@ div {
     padding: 20px;
 }
 
+/* ------------------------
+    ------  TABLET -------
+*/
 @media (max-width: 1000px) {
     .nowrapper {
         white-space: inherit;
+    }
+    #intro {
+        height: intrinsic;
     }
     
     #intro-content {
@@ -181,39 +189,40 @@ div {
         margin-right: 10px;
         width: 100%;
         vertical-align: middle;
-        margin-top: 40px;
+        margin-top: 0px;
+        position: relative;
     }
-    
-    #intro-mark p {
-        font-size: 2em;
+
+    #intro-text p {
+        font-size: 1.8em;
         line-height: 2em;
         margin-right: 10px;
     }
     
-    .intro {
+    #intro {
         width: 100%;
-        height: 600px;
         background-color: black;
     }
 
-    .intro .boxed-txt {
+    #intro .boxed-txt {
         z-index: 2;
     }
 
-    .intro p {
-        background-color: white;
-        color: black;
-        margin-right: 80px;
-    }
-    
     .elevator {
         margin-left: 0px;
     }
     
     .tagline {
-        margin-top: 80px;
+        margin-top: 20px;
     }
-    
+    #img-hero {
+        border: 1px red solid;
+        position: relative;
+    }    
+
+    #img-hero img {
+        width: 80%;
+    }
     /* Portfolio overrides - specifically adds the separator and some spacing */
     .portfolio-image {
         float: left;
@@ -232,10 +241,14 @@ div {
 }
 
 
+/* ------------------------
+    ------  PHONE -------
+*/
 @media (max-width: 480px) {
     .nowrapper {
         white-space: inherit;
     }
+    
     #intro-content {
         margin-left: 10px;
         margin-right: 10px;
@@ -243,12 +256,14 @@ div {
         vertical-align: middle;
         margin-top: 40px;
     }
-    #intro-mark p {
+    
+    #intro-text p {
         font-size: 1.6em;
         line-height: 1.6em;
         margin-right: 10px;
     }
-    .intro .boxed-txt {
+    
+    #intro .boxed-txt {
         z-index: 2;
         background-color: white;
         color: black;
@@ -256,9 +271,7 @@ div {
         border-radius: 0px;
     }
 
-    .img-hero {
-        display: none;
-    }
+    /* portfolio overrides */
     .portfolio-image {
         float: left;
         width: 100%;
