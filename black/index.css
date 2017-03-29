@@ -16,7 +16,7 @@ body {
 }
 
 div {
-    /*border: red 1px solid;*/
+   /*border: red 1px solid;*/
 }
 
 .maxwidth {
@@ -90,10 +90,17 @@ div {
     margin-top: 150px;
 }
 
-.portfolio h1 {
-    margin-top: 80px;
+.portfolio h1, #contact-area h1 {
+    margin-top: 110px;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.portfolio h1{
+    margin-bottom: 100px;
 }
 
 .portfolio-content {
@@ -103,9 +110,10 @@ div {
 
 .portfolio-desc {
     float: left;
-    width: 380px;
-    margin-top: 50px;
-    margin-left: 10px;
+    width: 300px;
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .portfolio-desc .title {
@@ -113,10 +121,11 @@ div {
     font-size: 2em;
     margin-bottom: 10px;
 }
+
 .portfolio-desc .description {
     font-family: 'Raleway', sans-serif;
     margin-left: 5px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .portfolio-desc .link {
@@ -129,9 +138,32 @@ div {
 }
 
 .portfolio-image img {
-    width: 100%;
+    width: 99%;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.portfolio-img-link img:last-child {
+    display:none;
+    -webkit-transition: display 2s; /* Safari */
+    transition: display 2s;
+}
+
+.portfolio-img-link img:first-child {
+    -webkit-transition: display 2s; /* Safari */
+    transition: display 2s;
+}
+
+.portfolio-img-link:hover img:first-child {
+    display:none;
+    -webkit-transition: display 2s; /* Safari */
+    transition: display 2s;
+}
+
+.portfolio-img-link:hover img:last-child {
+    display:inline-block;
+    -webkit-transition: display 2s; /* Safari */
+    transition: display 2s;
 }
 
 .portfolio-separator {
@@ -149,7 +181,7 @@ div {
 }
 
 #contact-list {
-    margin-left: 15px;
+    width: 60%;
 }
 
 .contact {
@@ -180,6 +212,9 @@ div {
     }
     #intro {
         height: intrinsic;
+        width: 100%;
+        background-color: black;
+        margin-top: -40px;
     }
     
     #intro-content {
@@ -198,11 +233,6 @@ div {
         margin-right: 10px;
     }
     
-    #intro {
-        width: 100%;
-        background-color: black;
-    }
-
     #intro .boxed-txt {
         z-index: 2;
     }
@@ -223,13 +253,29 @@ div {
     }
     /* Portfolio overrides - specifically adds the separator and some spacing */
     .portfolio-image {
-        float: left;
+        float: initial;
         width: 80%;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 15px;
     }
     
+    .portfolio-desc {
+        float: initial;
+        width: 55%;
+        margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-desc .title {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
     .portfolio-separator {
         display: inherit;
         border: 0;
@@ -278,17 +324,27 @@ div {
     
     /* portfolio overrides */
     .portfolio-image {
-        float: left;
+        float: initial;
         width: 100%;
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 15px;
     }
+    
+    .portfolio-desc {
+        width: 90%;
+    }
+
     .portfolio-separator {
         display: inherit;
         border: 0;
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
+    
+    #contact-list {
+        width: 90%;
+    }
+
 }
 
