@@ -122,13 +122,13 @@ div {
     margin-bottom: 10px;
 }
 
-.portfolio-desc .description {
+.portfolio-desc p {
     font-family: 'Raleway', sans-serif;
     margin-left: 5px;
     padding-right: 10px;
 }
 
-.portfolio-desc .link {
+.portfolio-desc .link-list {
     font-family: 'Raleway', sans-serif;
 }
 
