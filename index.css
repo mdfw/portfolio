@@ -183,11 +183,13 @@ div {
 #contact-list {
     width: 60%;
 }
+
 #contact-list dl dt {
     font-family: 'Raleway', sans-serif;
-    color: grey; 
+    color: #272727; 
     margin-bottom: 5px;   
 }
+
 #contact-list dl dd {
     font-family: 'Raleway', sans-serif;
     margin-left: 10px;
