@@ -29,12 +29,12 @@ div {
 #intro {
     width: 100%;
     background-color: black;
-    height: 800px;
+    height: 700px;
 }
 
 #intro-content {
     vertical-align: middle;
-    margin-top: 150px;
+    margin-top: 80px;
     z-index: 2;
     position: absolute;
     clear: right;
@@ -43,7 +43,7 @@ div {
 
 #intro-text p {
     font-size: 2.5em;
-    line-height: 2.1em;
+    line-height: 1.9em;
 }
 
 #intro .boxed-txt {
@@ -88,7 +88,7 @@ div {
     margin-left: 20px;
 }
 .tagline {
-    margin-top: 150px;
+    margin-top: 70px;
 }
 
 .portfolio h1, #contact-area h1 {
