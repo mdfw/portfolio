@@ -193,10 +193,14 @@ div {
 
 #contact-list dl dd {
     font-family: 'Raleway', sans-serif;
-    margin-left: 10px;
-    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 
+#contact-list img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
 .page-footer {
     background-color: black;
     color: white;
