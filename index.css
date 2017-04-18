@@ -40,7 +40,6 @@ div {
     clear: right;
 }
 
-
 #intro-text p {
     font-size: 2.5em;
     line-height: 1.9em;
@@ -53,7 +52,7 @@ div {
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
 .intro-hi {
@@ -77,7 +76,7 @@ div {
     color: white;
     padding: 5px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .nowrapper {
@@ -85,22 +84,26 @@ div {
 }
 
 .elevator {
-    margin-left: 20px;
-}
-.tagline {
-    margin-top: 70px;
+    margin-left: 0px;;
 }
 
-.portfolio h1, #contact-area h1 {
-    margin-top: 110px;
+#about p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#portfolio h1, #contact-area h1, #about h1 {
+    margin-top: 50px;
     font-weight: bold;
     font-size: 4em;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-family: 'Raleway', sans-serif;
 }
 
-.portfolio h1{
+#portfolio h1{
     margin-bottom: 100px;
 }
 
@@ -112,7 +115,6 @@ div {
 .portfolio-desc {
     float: left;
     width: 300px;
-    margin-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -121,6 +123,7 @@ div {
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .portfolio-desc p {
@@ -215,7 +218,7 @@ div {
         white-space: inherit;
     }
     #intro {
-        height: intrinsic;
+        height: inherit;
         width: 100%;
         background-color: black;
         margin-top: -40px;
@@ -248,6 +251,7 @@ div {
     .tagline {
         margin-top: 20px;
     }
+    
     #img-hero {
         position: relative;
     }    
@@ -255,6 +259,12 @@ div {
     #img-hero img {
         width: 80%;
     }
+    
+    #about {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
     /* Portfolio overrides - specifically adds the separator and some spacing */
     .portfolio-image {
         float: initial;
@@ -288,7 +298,12 @@ div {
     }
 }
 
-
+@media (min-width: 400px) and (max-width: 700px) {
+    #intro-text p {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+}
 /* ------------------------
     ------  PHONE -------
 */
