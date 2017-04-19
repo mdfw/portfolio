@@ -255,7 +255,6 @@ a:hover {
     }
     #intro {
         height: inherit;
-        width: 100%;
         background-color: black;
         margin-top: -40px;
     }
