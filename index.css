@@ -19,6 +19,16 @@ div {
    /*border: red 1px solid;*/
 }
 
+a {
+    text-decoration: none;
+    color: #414476;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7aa325;
+}
+
 .maxwidth {
     max-width: 900px;
     margin-left: auto;
@@ -57,6 +67,10 @@ div {
 
 .intro-hi {
     font-size: 2em;
+}
+
+.hi-period {
+    color: #543966;
 }
 
 .intro-comma {
@@ -173,7 +187,29 @@ div {
 .portfolio-separator {
     display: none;
 }
-    
+
+.link-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+
+.link-list a {
+    padding-left: 25px;
+}
+
+.link_github {
+    background: transparent url('img/icon_github.svg') no-repeat center left;
+}
+
+.link_demo {
+    background: transparent url('img/icon_pointer.svg') no-repeat center left;
+}
+
+.link_website {
+    background: transparent url('img/icon_link.svg') no-repeat center left;
+}
+
 #contact-area {
     margin-top: 80px;
     margin-bottom: 80px;
