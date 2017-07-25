@@ -37,15 +37,17 @@ jQuery(function() {
                 var item = feed.items[i];
                 
                 html += '<h2 class="title">'
-                + '<a href="'
-                + item.link
-                + '">'
                 + item.title
-                + '</a>'
                 + '</h2>';
                 
                 html += '<p>'
                 + item.description
+                + '<a href="'
+                + item.link
+                + '">'
+                + ' | more…'
+                + '</a>'
+                
                 + '</p>';
             }
             
