@@ -16,6 +16,46 @@
         <link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet" media="none" onload="this.media='all'">
         <noscript><link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet" media="all"></noscript>
 	</head>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jquery.jfeed.pack.js"></script>
+<script type="text/javascript">
+
+jQuery(function() {
+
+    jQuery.getFeed({
+        url: 'http://mdfw.me/feed/',
+        success: function(feed) {
+            jQuery('#writings-area').append('<div id="contact-area" class="maxwidth">'
+            + '<h1>'
+            + 'Writings'
+            + '</h1>');
+            
+            var html = '';
+            
+            for(var i = 0; i < feed.items.length && i < 5; i++) {
+            
+                var item = feed.items[i];
+                
+                html += '<h2 class="title">'
+                + '<a href="'
+                + item.link
+                + '">'
+                + item.title
+                + '</a>'
+                + '</h2>';
+                
+                html += '<p>'
+                + item.description
+                + '</p>';
+            }
+            
+            jQuery('#writings-area').append(html);
+        }    
+    });
+});
+
+</script>
+
 	<body class="home" id="mdfw">
 		<div class="page" id="begin">
 			<div class="page-content" id="content">
@@ -169,6 +209,9 @@
 					    </div>
 					</div>
 			    </div>
+			    
+			    <div id="writings-area"  class="maxwidth"></div>
+			    
                    <div id="contact-area" class="maxwidth">
                     <h1>
                         Contact
@@ -203,7 +246,6 @@
                     </div>
                  </div>
 			</div>
-			
             <footer class="page-footer">
                 <div class="maxwidth">
                     <p>
