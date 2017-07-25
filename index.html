@@ -15,49 +15,55 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet" media="none" onload="this.media='all'">
         <noscript><link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet" media="all"></noscript>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-24067887-8', 'auto');
+          ga('send', 'pageview');
+
+        </script>	
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="jquery.jfeed.pack.js"></script>
+        <script type="text/javascript">
+            jQuery(function() {
+                jQuery.getFeed({
+                    url: 'http://mdfw.me/feed/',
+                    success: function(feed) {
+                        jQuery('#writings-area').append('<div id="contact-area" class="maxwidth">'
+                        + '<h1>'
+                        + 'Writings'
+                        + '</h1>');
+            
+                        var html = '';
+            
+                        for(var i = 0; i < feed.items.length && i < 5; i++) {
+            
+                            var item = feed.items[i];
+                
+                            html += '<h2 class="title">'
+                            + item.title
+                            + '</h2>';
+                
+                            html += '<p>'
+                            + item.description
+                            + '<a href="'
+                            + item.link
+                            + '">'
+                            + ' | more…'
+                            + '</a>'
+                
+                            + '</p>';
+                        }
+            
+                        jQuery('#writings-area').append(html);
+                    }    
+                });
+            });
+        </script>
 	</head>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="jquery.jfeed.pack.js"></script>
-<script type="text/javascript">
-
-jQuery(function() {
-
-    jQuery.getFeed({
-        url: 'http://mdfw.me/feed/',
-        success: function(feed) {
-            jQuery('#writings-area').append('<div id="contact-area" class="maxwidth">'
-            + '<h1>'
-            + 'Writings'
-            + '</h1>');
-            
-            var html = '';
-            
-            for(var i = 0; i < feed.items.length && i < 5; i++) {
-            
-                var item = feed.items[i];
-                
-                html += '<h2 class="title">'
-                + item.title
-                + '</h2>';
-                
-                html += '<p>'
-                + item.description
-                + '<a href="'
-                + item.link
-                + '">'
-                + ' | more…'
-                + '</a>'
-                
-                + '</p>';
-            }
-            
-            jQuery('#writings-area').append(html);
-        }    
-    });
-});
-
-</script>
-
 	<body class="home" id="mdfw">
 		<div class="page" id="begin">
 			<div class="page-content" id="content">
