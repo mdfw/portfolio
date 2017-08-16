@@ -29,8 +29,10 @@
         <script type="text/javascript" src="jquery.jfeed.pack.js"></script>
         <script type="text/javascript">
             jQuery(function() {
+                var proto = 'http://';
+                if (location.protocol == 'https:') proto = 'https://';
                 jQuery.getFeed({
-                    url: 'http://mdfw.me/feed/',
+                    url: proto + 'mdfw.me/feed/',
                     success: function(feed) {
                         jQuery('#writings-area').append('<div id="contact-area" class="maxwidth">'
                         + '<h1>'
